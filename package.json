@@ -1,0 +1,56 @@
+{
+  "name": "vanta-mcp",
+  "version": "0.11.0",
+  "description": "A local MCP server for Android development, UI testing and artifact inspection",
+  "license": "MIT",
+  "author": {
+    "name": "Volsa",
+    "url": "https://github.com/SVolsa"
+  },
+  "type": "module",
+  "bin": {
+    "vanta-mcp": "server.js"
+  },
+  "files": [
+    "adb.js",
+    "advanced.js",
+    "android-tools.js",
+    "apk-inspection.js",
+    "apk-manifest.js",
+    "binary-inspection.js",
+    "connection.js",
+    "crash-inspection.js",
+    "device-input.js",
+    "device-replay.js",
+    "device-use.js",
+    "file-transfer.js",
+    "inspect-apk-zip.py",
+    "inspection-io.js",
+    "inspection-tools.js",
+    "job-scripts.js",
+    "native-diagnosis.js",
+    "operations.js",
+    "server.js",
+    "transport.js",
+    "vm-trace.js",
+    "README.zh-CN.md",
+    "docs/README.zh-CN.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/assets/",
+    "docs/usb-bridge.md",
+    "test-app/device-replay-flow.json",
+    "forensics.js"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7"
+  }
+}

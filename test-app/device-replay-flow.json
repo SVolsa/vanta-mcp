@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "package": "dev.vanta.inspectionprobe",
+  "steps": [
+    {
+      "kind": "wait_for",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_input"
+      }
+    },
+    {
+      "kind": "tap",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_input"
+      }
+    },
+    {
+      "kind": "type",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_input"
+      },
+      "text": "中文：∑≤∞，😀 👩‍💻 é %s"
+    },
+    {
+      "kind": "key",
+      "key": "BACK"
+    },
+    {
+      "kind": "scroll_until",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_submit"
+      },
+      "within": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_scroll"
+      },
+      "max_scrolls": 6
+    },
+    {
+      "kind": "tap",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_submit"
+      }
+    },
+    {
+      "kind": "wait_for",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_result",
+        "text": "Saved: 中文：∑≤∞，😀 👩‍💻 é %s"
+      },
+      "timeout_ms": 10000
+    },
+    {
+      "kind": "assert",
+      "selector": {
+        "resource_id": "dev.vanta.inspectionprobe:id/probe_result",
+        "text": "Saved: 中文：∑≤∞，😀 👩‍💻 é %s"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+id=vanta_mcp
+name=Vanta MCP USB Bridge
+version=0.4.4
+versionCode=404
+author=Soya / Vanta
+description=Owner-paired USB root management bridge. TLS client certificates required. No Wi-Fi or ADB required after setup. Action toggles service.

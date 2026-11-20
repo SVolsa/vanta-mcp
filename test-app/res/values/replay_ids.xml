@@ -1,0 +1,6 @@
+<resources>
+    <item type="id" name="probe_input"/>
+    <item type="id" name="probe_scroll"/>
+    <item type="id" name="probe_submit"/>
+    <item type="id" name="probe_result"/>
+</resources>
